@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main {
+	font-family: 'Major Mono Display', monospace;
+	color: white;
+}
+
+.landing {
+	min-height: 100vh;
+	background: url(./cyberpunk.jpg);
+	background-size: cover;
+	padding: 0rem 5rem;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 10vh;
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+}
+.nav-links li {
+	padding-left: 10rem;
+	font-size: 1.3em;
+}
+#logo{
+	font-weight: lighter;
+	font-size: 2rem;
+}
+.big-text{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%); /* perfectly centered text */
+	font-size: 4rem;
+	color: rgb(218,195,253); /* light purple color */
+	background-color: rgb(0,0,0,0.4);
+	padding-bottom: 5px;
+	border-radius: 5px;
+}
+.cta {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 1.8rem;
+	color: rgb(218,195,253); /* light purple color */
+	background-color: rgb(0,0,0,0.4);
+	border-style: none;
+	border-radius: 5px;
+	padding: 15px;
+	cursor: pointer;
+}
+.cta:hover {
+	color: rgba(222, 0, 66, 0.8);
+	background-color: rgba(0, 0, 0, 0.75);
+	animation: grow;
+}
+.intro {
+	background: rgb(50,100,240,0.5); /* very dark blue */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro-text {
+	color: white;
+	font-size: 3rem;
+}
+.slider {
+	background: rgb(200,40,100,0.25); /* purple color */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
+}
+
+.hide{
+	background: rgb(50,100,240,0); /* very dark blue */
+	overflow: hidden;
+}
+.hide span{
+	transform: translateY(100%);
+	display: inline-block;
+}
